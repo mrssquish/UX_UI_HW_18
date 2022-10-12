@@ -59,25 +59,6 @@ ul li a {
     font-size:18px;
     padding:50px;
 }
-.menu-content {
-    font-family: 'Oswald', sans-serif; 
-    padding: 0 0 0 50px;
-}
-.collapsible-menu {
-    background-color: rgb(255, 255, 255);
-    padding: 0px 30px;
-    border-bottom: 3px solid #CDE700;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
-}
-.collapsible-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-.collapsible-menu a {
-    display:block;
-    padding: 10px;
-    text-decoration: none;
-}
 
 
 .link{
@@ -126,7 +107,7 @@ nav a{
 }
 .hero p{
     color:white;
-    letter-spacing: 5px; 
+    letter-spacing: 5px; font-size:24px;
     line-height: 20px;
 }
 .hero img{
@@ -185,52 +166,36 @@ nav a{
     grid-template-areas:
      "top"
     "bottom";
+    filter: grayscale(95%);
+}
+.card:hover{
+    transition: filter .5s ease-in-out; 
+    filter: grayscale(0%); 
+    transform: scale(1.05);
 }
 
 .card1{
     background-image: linear-gradient(to top, rgba(0,0,0,.6), rgba(100,100,100,.0)), url(../images/dhsCardImg.png);
-    filter: grayscale(95%); 
     margin-top:72px;
-    
 }
-.card1:hover{
-    transition: filter .5s ease-in-out; 
-    filter: grayscale(0%); 
-    transform: scale(1.05);
-    
-  
-}
+
 .card2{
-   
-    background-image: linear-gradient(to top, rgba(0,0,0,.6), rgba(100,100,100,.0)), url(../images/dhsCardImg.png);
-    filter: grayscale(95%); 
+    background-image: linear-gradient(to top, rgba(0,0,0,.6), rgba(100,100,100,.0)), url(../images/rideNSeek_cardimg.png);
     align-self:flex-start;
     margin-top:-250px;
-    
-    
 }
 .card2:hover{
-    transition: filter .5s ease-in-out;
-    filter: grayscale(0%); 
-    transform: scale(1.05);
-    
-  
+    background-image: linear-gradient(to top, rgba(0,0,0,.4), rgba(100,100,100,.0)), url(../images/rideNSeek_cardimg.png);
 }
 .card3{
 
-    background-image: linear-gradient(to top, rgba(0,0,0,.6), rgba(100,100,100,.0)), url(../images/dhsCardImg.png); 
-    filter: grayscale(95%); 
+    background-image: linear-gradient(to top, rgba(0,0,0,.6), rgba(100,100,100,.0)), url(../images/jaaduee_cardImg.png); 
+
     align-self: flex-end;
   
     
 }
-.card3:hover{
-    transition: filter .5s ease-in-out;
-    filter: grayscale(0%); 
-    transform: scale(1.05);
-    
-  
-}
+
 .card_info{
     grid-area:bottom;
     text-align: left;
