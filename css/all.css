@@ -190,10 +190,7 @@ nav a{
 .card3{
 
     background-image: linear-gradient(to top, rgba(0,0,0,.6), rgba(100,100,100,.0)), url(../images/jaaduee_cardImg.png); 
-
-    align-self: flex-end;
-  
-    
+    align-self: flex-end;  
 }
 
 .card_info{
