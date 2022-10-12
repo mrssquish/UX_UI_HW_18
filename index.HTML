@@ -5,80 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../UX_UI_HW_18/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
     <title>Cassie Loves Cake</title>
 </head>
 
 
 <body>
-    <div class="main_container">  
-        <header>
-        <nav>
+    <header>
+        <nav class="collapsible_menu">
             <a href="index.html">
                 <img class="logo" src="../UX_UI_HW_18/images/logo_cassieLovesCake_White.png" alt="Cassie Love's Cake Logo">
             </a>
-
-            <ul>
-              
-                <li>
-                    <a href="#">Work</a>
-                </li><!--closing work li-->
-                <li>
-                    <a href="#">About</a>
-                </li><!--closing about li-->
-                <li>
-                    <a href="#">Resume</a>
-                </li><!--closing resume li-->
-            </ul><!--closing nav ul-->
+            <input type="checkbox" id="menu">
+            <label for="menu">Menu</label>
+            <div class="menu_content">
+                <ul>
+                    <li>
+                        <a href="#">Work</a>
+                    </li><!--closing work li-->
+                    <li>
+                        <a href="#">About</a>
+                    </li><!--closing about li-->
+                    <li>
+                        <a href="#">Resume</a>
+                    </li><!--closing resume li-->
+                </ul><!--closing nav ul-->
+            </div><!--closing menu_content div--> 
         </nav><!--closing nav-->
-    </header>      
+
+    </header> 
+    <div class="main_container">  
+
         <section class="hero">
-            <div>
-                <img src="../UX_UI_HW_18/images/logo_cassieLovesCake_White.png" alt="Cassie Loves Cake Logo">
+            <div class="hero_content">
+                <img src="../UX_UI_HW_18/images/cassieLovesCake_white_vt_lg.png" alt="Cassie Loves Cake Logo">
                 <p>UX DESIGN | GRAPHIC DESIGN</p>
-                <button><a href="#">Wanna Talk?</a></button>
-            </div>
+                <p class="hero_p">AVAILABLE FOR WORK</p>
+                <div class="hero_btn">
+                    <a href="#" class="button">Wanna Talk?</a>
+                </div>
+            </div><!--closing hero_content div-->
         </section><!--closing hero section-->
+
         <section class="about">
-            <h1>Greetings! I'm Cassie,</h1>
-            <p>a designer with a passion for creating new and interesting projects that real people 
-                will really love interacting with. What I enjoy most about design is
-                 the journey to find the solution. Who knows where the journey will end up, but I’m in it for the ride.
-            </p>
-            <a href="*">About Me</a>
+            <div class="about_content">
+                <h1>Greetings! I'm Cassie,</h1>
+                <p>a designer with a passion for creating new and interesting projects that real people 
+                    will really love interacting with. What I enjoy most about design is
+                    the journey to find the solution. Who knows where the journey will end up, but I’m in it for the ride.
+                </p>
+                <a class="link" href="*">About Me</a>
+            </div><!--closing about_content div-->
         </section><!--closing about section-->
+
         <section class="featuredProjects">
+
             <h2>Featured Projects</h2>
-            <div class="card">
-                <h3>Porject Title</h3>
-                <h4>UX 2022</h4>
+
+            <div class="card card1">
+                <div class="card_info">
+                    <h3>DHS Website Redesign</h3>
+                    <h4>UX 2022</h4>
+                </div><!---closing card_info div--->
             </div><!--closing card-->
-            <div class="card">
-                <h3>Porject Title</h3>
-                <h4>UX 2022</h4>
+
+            <div class="card card2">
+                <div class="card_info">
+                    <h3>Ride N' Seek Travel App</h3>
+                    <h4>UX 2022</h4>
+                </div><!--closing card_info-->
             </div><!--closing card-->
-            <div class="card">
-                <h3>Porject Title</h3>
-                <h4>UX 2022</h4>
+
+            <div class="card card3">
+                <div class="card_info">
+                    <h3>Friends of Felines Redesign</h3>
+                    <h4>UX 2022</h4>
+                </div><!--closing card_info-->
             </div><!--closing card-->
-            <a href="*">Check Out More</a>
+            
+            <a class="link" href="#">Check Out More</a>
+
         </section><!--closing featuredProjects-->
+        
         <footer>
             <div id="footerTop">
-                <h3>Wanna Work Together?</h3>
+                <h2 class="footerTitle">Wanna Work Together?</h2>
                 <p>It could be fun...</p>
-                <button><a href="#">Contact Me</a></button>
+                <a class="button2" href="#">Contact Me</a>
             </div><!--closing topFooter-->
             <div id="footerBottom">
+                <a href="index.html">
+                    <img class="logoFooter" src="../UX_UI_HW_18/images/cassieLovesCake_logo_HZ_white.png" alt="Cassie Loves Cake Logo">
+                </a>
                 <ul class="footerNav">
-                    <li>
-                        <a href="#">
-                            <img src="" alt="Cassie Loves Cake Logo">
-                        </a>
-                    </li><!--closing logo li-->
                     <li>
                         <a href="#">LinkedIn</a>
                     </li><!--closing LinkedIn li-->
-                    <li>
+                    <li >
                         <a href="#">Behance</a>
                     </li><!--closing Behance li-->
             </ul><!--closing footer nav ul-->
