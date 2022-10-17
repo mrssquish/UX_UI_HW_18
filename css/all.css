@@ -265,10 +265,11 @@ footer{
 /* ABOUT PAGE----------------------------------------------------------*/
 .main_container-about{
     display: grid;
-    grid-template-rows:50vh 150vh 382px;
+    grid-template-rows:50vh 115vh 60vh 382px;
     grid-template-areas: 
     "hero"
     "main"
+    "skills"
     "footer";
 }
 .hero_about{
@@ -320,6 +321,24 @@ footer{
     width: 100%;
     grid-column: 3/9;
     grid-row: 5/6;
+}
+.skills{
+    grid-area: skills;
+    display: grid;
+    grid-template-columns: 227px 1fr 1fr 50px;
+    grid-template-areas: ". ux graphic .";
+}
+b{
+    font-weight: 600;
+}
+#uxSkills, #graphicSkills{
+    padding:50px;
+}
+#uxSkills{
+    grid-area: ux;
+}
+#graphicSkills{
+    grid-area: graphic;
 }
 footer{
     grid-area: footer;
