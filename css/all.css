@@ -21,6 +21,13 @@ body{
     border: 2px solid #fff;
     background-color: #333;
 }
+.button:hover{
+    border: 2px solid magenta;
+    color:magenta;
+    transition: 1.5s;
+    filter:drop-shadow(5px 5px 20px rgba(255, 0, 255, .5));
+}
+
 .button2{
     padding:10px 50px 10px 50px;
     text-decoration: none;
@@ -30,6 +37,13 @@ body{
     border: 2px solid #fff;
    
 }
+.button2:hover{
+    border: 3px solid blue;
+    color:gold;
+    transition: 1.5s;
+
+}
+
 h2{
     font-size: 72px ;
 }
@@ -66,6 +80,7 @@ ul li a {
     font-size: 36px;
     color:#333
 }
+/*nav----------------------------------------------------------------*/
 nav{
     width: 100vw;
     background-color: #333;
@@ -80,6 +95,11 @@ nav{
 nav a{
     padding:3em;
 }
+
+nav ul li a:hover{
+    color:magenta;
+}
+
 .logo{
     width:65px;
 
@@ -92,6 +112,7 @@ nav a{
         "about"
         "feature"
         "footer";
+   
 }
 .hero{
     grid-area: hero;
@@ -134,6 +155,7 @@ nav a{
 
 .featuredProjects{
     grid-area:feature;
+ 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -154,8 +176,6 @@ nav a{
 .featuredProjects a{
     grid-area: b;
 }
-
-
 .card{
     width:492px;
     height:570px;
@@ -242,13 +262,84 @@ footer{
     width:269.9585px;
 
 }
+/* ABOUT PAGE----------------------------------------------------------*/
+.main_container-about{
+    display: grid;
+    grid-template-rows:50vh 150vh 382px;
+    grid-template-areas: 
+    "hero"
+    "main"
+    "footer";
+}
+.hero_about{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.hero_about{
+    grid-area: hero;
+    background-color: #333;
+}
+.hero_about h1{
+    color: whitesmoke;
+    font-size:97px;
+    grid-row: 1/2;
+    grid-column: 4/8;
+}
+.about_main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px 110px 100px 50px 600px;
+}
+#aboutHeroImg{
+    grid-column: 7/11;
+    grid-row: 1/2;
+    width:586px;
+    justify-items: left;
+}
+.quote{
+    font-size: 20px;
+    padding-top:50px;
+    justify-self:center;
+    grid-column: 3/6;
+    grid-row: 1/2;
+}
+.about_main h2{
+    grid-column: 3/7;
+    grid-row: 2/3;
+}
+.job_title{
+    grid-column: 3/6;
+    grid-row:3/4;
+}
+.about_main h4{
+    justify-self: baseline;
+    grid-row: 4/5;
+    grid-column: 3/6;
+}
+.about_info{
+    width: 100%;
+    grid-column: 3/9;
+    grid-row: 5/6;
+}
+footer{
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+/*RESPONSIVE DESIGN----------------------------------------------------*/
 @media only screen and (max-width: 1302px){
     .about{
         margin-top:20px;
     }
    .featuredProjects{
        margin-top:50px;
-   
+   }
 }
 @media only screen and (max-width: 1103px){
    .about_content{
@@ -302,8 +393,7 @@ footer{
     }
     .hero_content{
         text-align: center;
-        margin-top:-80px;
-        
+        margin-top:-80px; 
     }
     p{
         font-size:18px;
@@ -470,5 +560,4 @@ footer{
         grid-template-rows: .5fr 1.3fr;
         justify-items: center;
     } 
-}
 }
