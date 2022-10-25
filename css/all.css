@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth; 
+}
 .box{
     border: 2px solid green;
 }
@@ -22,8 +25,8 @@ body{
     background-color: #333;
 }
 .button:hover{
-    border: 2px solid magenta;
-    color:magenta;
+    border: 2px solid hotpink;
+    color:hotpink;
     transition: 1.5s;
     filter:drop-shadow(5px 5px 20px rgba(255, 0, 255, .5));
 }
@@ -36,12 +39,6 @@ body{
     background-color:#999;
     border: 2px solid #fff;
    
-}
-.button2:hover{
-    border: 3px solid blue;
-    color:gold;
-    transition: 1.5s;
-
 }
 
 h2{
@@ -77,7 +74,7 @@ ul li a {
 
 .link{
     text-decoration: none;
-    font-size: 36px;
+    font-size: 24px;
     color:#333
 }
 /*nav----------------------------------------------------------------*/
@@ -106,7 +103,7 @@ nav ul li a:hover{
 }
 .main_container{
     display: grid;
-    grid-template-rows: 100vh 70vh 200vh 382px;
+    grid-template-rows: 100vh 60vh 165vh 382px;
     grid-template-areas: 
         "hero"
         "about"
@@ -124,7 +121,7 @@ nav ul li a:hover{
 .hero_content{
     text-align: center;
     margin-top:-150px;
-    
+
 }
 .hero p{
     color:white;
@@ -140,10 +137,13 @@ nav ul li a:hover{
  
 .about{
     width:100%;
+    max-width: 1600px;
     grid-area: about;
     display: flex;
+    justify-self: center;
     justify-content: center;
     align-items: center;
+  
     padding-bottom:50px;
 }
 .about_content{
@@ -152,10 +152,13 @@ nav ul li a:hover{
 .about_content h1{
     font-size: 61px;
 }
-
+.about_content p{
+    margin:0 auto;
+}
 .featuredProjects{
+    max-width: 1700px;
+    justify-self: center;
     grid-area:feature;
- 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -172,6 +175,7 @@ nav ul li a:hover{
     width:30%;
     margin: 0 auto;
     align-self: start;
+    margin-left:100px;
 }
 .featuredProjects a{
     grid-area: b;
@@ -186,12 +190,15 @@ nav ul li a:hover{
     grid-template-areas:
      "top"
     "bottom";
-    filter: grayscale(95%);
+    filter: drop-shadow(5px 5px 5px #999) grayscale(95%);
+  
 }
 .card:hover{
-    transition: filter .5s ease-in-out; 
+
     filter: grayscale(0%); 
     transform: scale(1.05);
+    filter: drop-shadow(5px 5px 15px #999) saturate(1.05);
+
 }
 
 .card1{
@@ -210,7 +217,7 @@ nav ul li a:hover{
 .card3{
 
     background-image: linear-gradient(to top, rgba(0,0,0,.6), rgba(100,100,100,.0)), url(../images/jaaduee_cardImg.png); 
-    align-self: flex-end;  
+   
 }
 
 .card_info{
@@ -234,14 +241,27 @@ footer{
     width: 100%;
     padding:50px;
     text-align: center;
-    background-color:#999 ;
+    background-color:#333 ;
     color:white;
-
 }
+/*background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;*/
 
 .footerTitle{ 
     margin:0 auto;margin-bottom: -30px;
+
+    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: cover;
+	animation: gradient .2s ease infinite;
   
+
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;*/
+}
+.button3{
+    border: solid 2px black;
+    padding: 10px 30px 10px 30px;
 }
 #footerBottom{
     width:100%;
@@ -265,7 +285,7 @@ footer{
 /* ABOUT PAGE----------------------------------------------------------*/
 .main_container-about{
     display: grid;
-    grid-template-rows:50vh 115vh 60vh 382px;
+    grid-template-rows:50vh 70vh 60vh 382px;
     grid-template-areas: 
     "hero"
     "main"
@@ -322,11 +342,18 @@ footer{
     grid-column: 3/9;
     grid-row: 5/6;
 }
+.about_info{
+    font-size: 24px;
+}
 .skills{
     grid-area: skills;
     display: grid;
-    grid-template-columns: 227px 1fr 1fr 50px;
+    grid-template-columns: 227px 600px 600px 50px;
     grid-template-areas: ". ux graphic .";
+}
+.skills p{
+    font-size:24px;
+    padding-right:50px;
 }
 b{
     font-weight: 600;
@@ -357,6 +384,9 @@ footer{
         margin-top:20px;
     }
    .featuredProjects{
+       margin-top:50px;
+   }
+   .card3{
        margin-top:50px;
    }
 }
